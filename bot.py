@@ -21,7 +21,7 @@ class TwitterBot:
             access_token=self.access_token,
             access_token_secret=self.access_token_secret,
         )
-        return tweepy.API(auth)
+        return tweepy.API(auth, wait_on_rate_limit=True)
 
     def get_twitter_v2(self):
         """
