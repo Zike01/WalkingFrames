@@ -27,7 +27,7 @@ def process(season, episode):
             if not exists:
                 os.mkdir(f"{IMAGE_PATH}/S{season}/{episode}")
                 
-            name = f"{IMAGE_PATH}/{episode}/frame_{frame_made}.jpg"
+            name = f"{IMAGE_PATH}/S{season}/{episode}/frame_{frame_made}.jpg"
             cv2.imwrite(name, frame)
         curr_frame += 1
 
