@@ -1,1 +1,0 @@
-{"curr_season": 1, "curr_ep": 1, "curr_frame": 1}
