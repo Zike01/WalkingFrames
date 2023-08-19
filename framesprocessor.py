@@ -6,7 +6,6 @@ IMAGE_PATH = "images"
 EXTENSION = "mkv"
 TARGET_FPS = 1
 
-
 def process(season, episode):
     video = f"{VIDEO_PATH}/S{season}e{episode}.{EXTENSION}"
     capture = cv2.VideoCapture(video)
@@ -23,10 +22,10 @@ def process(season, episode):
         
         if curr_frame % skip == 0:
             frame_made += 1
-            exists = os.path.isdir(f"{IMAGE_PATH}/{episode}")
+            exists = os.path.isdir(f"{IMAGE_PATH}/S{season}/{episode}")
             
             if not exists:
-                os.mkdir(f"{IMAGE_PATH}/{episode}")
+                os.mkdir(f"{IMAGE_PATH}/S{season}/{episode}")
                 
             name = f"{IMAGE_PATH}/{episode}/frame_{frame_made}.jpg"
             cv2.imwrite(name, frame)
