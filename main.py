@@ -64,5 +64,6 @@ while True:
         print(text)
         print(f"https://twitter.com/walking_frames/status/{response.data['id']}")
         
+        curr_frame += 1
         time.sleep(120)
         
