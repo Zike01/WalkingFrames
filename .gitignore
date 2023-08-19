@@ -140,3 +140,5 @@ pyrightconfig.json
 images/
 videos/
 .vscode
+
+config.txt
