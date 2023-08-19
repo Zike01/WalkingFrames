@@ -11,13 +11,15 @@ consumer_key = os.getenv("API_KEY")
 consumer_secret = os.getenv("API_SECRET")
 access_token = os.getenv("ACCESS_TOKEN")
 access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
+bearer_token = os.getenv("BEARER_TOKEN")
 
 twitter_bot = TwitterBot(
-    consumer_key, consumer_secret, access_token, access_token_secret
+    consumer_key, consumer_secret, access_token, access_token_secret, bearer_token
 )
 
 clientv1 = twitter_bot.get_twitter_v1()
 clientv2 = twitter_bot.get_twitter_v2()
+
 
 # Get current season, ep and frame from config file
 with open("config.txt", "r") as config:
