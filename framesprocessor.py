@@ -41,7 +41,7 @@ def process(season, episode):
 
 if __name__ == "__main__":
     season = int(input("Season: "))
-    eps = len(os.listdir("videos"))
+    eps = len(os.listdir(f"{VIDEO_PATH}/S{season:02d}"))
 
     for ep in range(1, eps + 1):
         process(f"{season:02d}", f"{ep:02d}")
