@@ -21,10 +21,12 @@ clientv1 = twitter_bot.get_twitter_v1()
 clientv2 = twitter_bot.get_twitter_v2()
 
 
-# Get current season, ep and frame from config file
-
+# -----------------CONSTANTS-------------------#
 TITLE = "The Walking Dead"
+# ---------------------------------------------#
 
+
+# Get current season, ep and frame from config file
 with open("config.txt", "r") as config:
     data = json.load(config)
 
