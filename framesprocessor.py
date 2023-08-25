@@ -1,14 +1,17 @@
 import cv2
 import os
 
-VIDEO_PATH = "videos"
-IMAGE_PATH = "images"
-EXTENSION = "mkv"
+
+#-----------------CONSTANTS-------------------#
+VIDEO_PATH = "" 
+IMAGE_PATH = ""
+EXTENSION = ""
 TARGET_FPS = 1
+#---------------------------------------------#
 
 
 def process(season, episode):
-    video = f"{VIDEO_PATH}/S{season}e{episode}.{EXTENSION}"
+    video = f"{VIDEO_PATH}/S{season}/S{season}e{episode}.{EXTENSION}"
     capture = cv2.VideoCapture(video)
     fps = round(capture.get(cv2.CAP_PROP_FPS))
 
