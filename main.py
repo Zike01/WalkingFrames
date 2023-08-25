@@ -22,6 +22,9 @@ clientv2 = twitter_bot.get_twitter_v2()
 
 
 # Get current season, ep and frame from config file
+
+TITLE = "The Walking Dead"
+
 with open("config.txt", "r") as config:
     data = json.load(config)
 
@@ -59,12 +62,8 @@ total_frames = len(os.listdir(current_dir))
 
 
 # upload the tweet
-text = f"The Walking Dead - Season {curr_season:02d} Episode {curr_ep:02d} - Frame {curr_frame} of {total_frames}"
+text = f"{TITLE} - Season {curr_season:02d} Episode {curr_ep:02d} - Frame {curr_frame} of {total_frames}"
 response = clientv2.create_tweet(text=text, media_ids=[media_id])
-
-# print link to the tweet
-print(text)
-print(f"https://twitter.com/walking_frames/status/{response.data['id']}")
 
 curr_frame += 1
 
