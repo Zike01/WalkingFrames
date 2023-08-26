@@ -1,7 +1,7 @@
 # Walking Frames
 
 A Twitter bot that posts every frame of a TV series/movie in order.  
-Made with [Tweepy](https://docs.tweepy.org/en/stable/) and [Opencv](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html).
+Made with [Tweepy](https://docs.tweepy.org/en/stable/) and [OpenCV](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html).
 ## Installation (Windows)
 ```
 git clone https://github.com/Zike01/WalkingFrames.git
