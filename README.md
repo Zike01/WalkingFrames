@@ -1,10 +1,10 @@
 # Walking Frames
 
-some text
-
-## Installation
+A Twitter bot that posts every frame of a TV series/movie in order.  
+Made with [Tweepy](https://docs.tweepy.org/en/stable/) and [Opencv](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html).
+## Installation (Windows)
 ```
-git clone {repo}
+git clone https://github.com/Zike01/WalkingFrames.git
 cd WalkingFrames
 pip install -r requirements.txt
 ```
@@ -12,13 +12,11 @@ pip install -r requirements.txt
 ## Usage
 
 ### Frames processor
-Create a video folder (input) and images folder (output). This can be anywhere on your computer.
-
+Create a video folder (input) and images folder (output). This can be anywhere on your computer.  
 Open **framesprocessor.py** and set the **VIDEO_PATH** and **IMAGE_PATH** at the top of the file.
 ![constants](demos/constants.png)
 
-Make sure the **EXTENSION** matches the extension of the video files
-
+Make sure the **EXTENSION** matches the extension of the video files.    
 Paste videos in your video folder and organise the folders like so:\
 ![file structure](demos/file-structure.png)
 
