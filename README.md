@@ -4,7 +4,7 @@ some text
 
 ## Installation
 ```
-git clone ''
+git clone {repo}
 cd WalkingFrames
 pip install -r requirements.txt
 ```
@@ -14,13 +14,15 @@ pip install -r requirements.txt
 ### Frames processor
 Create a video folder (input) and images folder (output). This can be anywhere on your computer.
 
-Open framesprocessor.py and set the VIDEO_PATH and IMAGE_PATH at the top of the file.
+Open **framesprocessor.py** and set the **VIDEO_PATH** and **IMAGE_PATH** at the top of the file.
+![constants](demos\\constants.png)
 
-Make sure the EXTENSION matches the extension of the video files
+Make sure the **EXTENSION** matches the extension of the video files
 
-Paste videos in video folder and organise the folders like so:
+Paste videos in your video folder and organise the folders like so:\
+![file structure](demos\\file-structure.png)
 
-All videos must have the same naming convention (S0Xe0X) or otherwise the program will not work.
+**ALL VIDEOS SHOULD HAVE THE SAME NAMING CONVENTION (S0Xe0X) FOR THE PROGRAM TO RUN**
 
 - Run framesprocessor.py
 - Enter the current season you wish to process
@@ -28,24 +30,27 @@ All videos must have the same naming convention (S0Xe0X) or otherwise the progra
 - Repeat for every season
 
 ### Twitter API
-Create a .env file and set up the constants.
+Create a .env file in the project folder and set up the constants.
+
+![tokens](demos\\tokens.png)
 
 Create a Twitter developer account and open the [developer dashboard](https://developer.twitter.com/en/portal/dashboard)
 
-Create new app
-
-In settings make sure you set up user authentication (write only). This will allow you to post your tweets.
+In settings make sure you set up user authentication (read and write). This will allow you to post your tweets.
+![user auth](demos\\user_auth.png)
 
 Go to Keys and tokens and generate the tokens required for authentication.
-
+![tokens](demos\\consumer_keys.png)
 Paste the newly generated values in the .env file. In case you lose these values they can be regenerated at any time through the developer portal.
 
 [Tweepy Documentation](https://docs.tweepy.org/en/stable/)
 
 ### Main Script
 All you need to do here is change the TITLE constant to the name of the TV Show/movie you wish to post. You can also change the tweet caption on line 67.
+![title](demos\\title.png)
+![text](demos\\text.png)
 
 ### Task Scheduler
-Find a way to schedule your script to run every X minutes. For windows you can use task scheduler:
+Find a way to schedule your script to run every X minutes. For windows you can use the [task scheduler](https://www.youtube.com/watch?v=4n2fC97MNac):
 
 For free accounts you can only post 50 tweets/day, or roughly 1 tweet every 30 minutes.
