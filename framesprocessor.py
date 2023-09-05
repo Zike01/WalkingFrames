@@ -2,12 +2,12 @@ import cv2
 import os
 
 
-#-----------------CONSTANTS-------------------#
-VIDEO_PATH = "" 
+# -----------------CONSTANTS-------------------#
+VIDEO_PATH = ""
 IMAGE_PATH = ""
 EXTENSION = ""
 TARGET_FPS = 1
-#---------------------------------------------#
+# ---------------------------------------------#
 
 
 def process(season, episode):
@@ -23,7 +23,7 @@ def process(season, episode):
 
         if not success:
             return
-        
+
         # Only save the image if the current frame is divisible by the fps of the original video
         # This way only 1 frame is processed per second
 
