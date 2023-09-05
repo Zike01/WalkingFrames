@@ -2,6 +2,8 @@
 
 A Twitter bot that posts every frame of a TV series/movie in order.  
 Made with [Tweepy](https://docs.tweepy.org/en/stable/) and [OpenCV](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html).
+
+View the bot [here](https://twitter.com/walking_frames).
 ## Installation (Windows)
 ```
 git clone https://github.com/Zike01/WalkingFrames.git
@@ -43,7 +45,8 @@ Go to Keys and tokens and generate the tokens required for authentication.
 Paste the newly generated values in the .env file. In case you lose these values they can be regenerated at any time through the developer portal.
 
 ### Main Script
-All you need to do here is change the TITLE constant to the name of the TV Show/movie you wish to post. You can also change the tweet caption on line 67.
+All you need to do here is change the TITLE constant to the name of the TV Show/movie you wish to post. You can also change the tweet caption on line 67 if you're posting movie frames.  
+Rename **sample_config.txt** to **config.txt** and configure the starting season, episode and frame. 
 
 ![title](demos/title.png)
 ![text](demos/text.png)
